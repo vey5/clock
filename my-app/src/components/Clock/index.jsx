@@ -1,10 +1,10 @@
-import { format } from 'date-fns';
+
 import styles from './styles.module.css'
 import { useState, useEffect} from 'react'  
-  <header className ={styles.header}>
+  
 
 
-  </header>
+  
   
 const Сlock = () => {
  const [time, setTime] = useState(new Date())
@@ -15,7 +15,7 @@ const Сlock = () => {
   return () => clearInterval(interval)
 }, [])
 
- const date = format(new Date(2023, 8, 8), 'MM/dd/yyyy')
+ 
   
 
 const hours = time.getHours()
@@ -25,9 +25,8 @@ const seconds = time.getSeconds()
 const timeString = `${hours}:${minutes}:${seconds}`
   
   
-  return  <div className = {styles.Clock}>
-        <p className = {styles.date}>{date}</p>
-       <h1 className = {styles.time}>{timeString}</h1>
+  return  <div>
+       <h1 className={styles.Clock}>{timeString}</h1>
   </div>
   
 };

@@ -1,24 +1,16 @@
 .Clock {
   width: 130px;
   height: 50px;
-  text-align: center;
   margin: 40vh auto 0px auto;
+  padding: 10px 0;
   color: violet;
-  
-}
-
-.date {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: -23px;
-}
-
-.time {
-  width: 130px;
   border: 2px solid violet;
   border-radius: 15px;
   background-color: bisque;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 8px 0;
   text-align: center;
+  
 }
+
+
